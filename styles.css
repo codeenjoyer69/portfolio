@@ -1,0 +1,79 @@
+/* styles.css */
+body {
+    background-image: url("images/background-2426328.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white; /* Keep the white font */
+    text-align: center; /* Center text horizontally */
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    animation: fadeIn 2s ease-in;
+}
+
+.about-container {
+    display: none;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Increase the font size for the homepage header */
+.hero h1 {
+    font-size: 36px; /* You can adjust the font size as needed */
+}
+
+/* Increase the font size for the homepage main text */
+.hero p {
+    font-size: 18px; /* You can adjust the font size as needed */
+}
+/* Center the content in the About section */
+section#about {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.fade-in {
+    animation: fadeIn 2s ease-in;
+}
